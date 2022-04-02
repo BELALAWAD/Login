@@ -37,7 +37,7 @@ class LoginPage extends StatelessWidget {
                       SizedBox(height: 20,),
                       FadeAnimation(1.2, Text("Login to your account", style: TextStyle(
                         fontSize: 15,
-                        color: Colors.black
+                        color: Colors.lime
                       ),)),
                     ],
                   ),
@@ -73,7 +73,6 @@ class LoginPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(50)
                         ),
                         child: Text("Login", style: TextStyle(
-                          fontWeight: FontWeight.w600, 
                           fontSize: 18
                         ),),
                       ),
@@ -84,7 +83,7 @@ class LoginPage extends StatelessWidget {
                     children: <Widget>[
                       Text("Don't have an account?"),
                       Text("Sign up", style: TextStyle(
-                        fontWeight: FontWeight.w600, fontSize: 18
+                         fontSize: 18
                       ),),
                     ],
                   ))

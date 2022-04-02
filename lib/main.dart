@@ -28,15 +28,16 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               Column(
                 children: <Widget>[
-                  FadeAnimation(1, Text("Welcome", style: TextStyle(
+                  FadeAnimation(1, Text("Welcome in My Website", style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 30
+                    fontSize: 30,
+                    color: Colors.blue
                   ),)),
                   SizedBox(height: 20,),
-                  FadeAnimation(1.2, Text("Automatic identity verification which enables you to verify your identity", 
+                  FadeAnimation(1.2, Text("You can now use the application see below", 
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    color: Colors.grey[700],
+                    color: Colors.lime,
                     fontSize: 15
                   ),)),
                 ],
@@ -59,12 +60,12 @@ class HomePage extends StatelessWidget {
                     },
                     shape: RoundedRectangleBorder(
                       side: BorderSide(
-                        color: Colors.black
+                        color: Colors.blue
                       ),
                       borderRadius: BorderRadius.circular(50)
                     ),
                     child: Text("Login", style: TextStyle(
-                      fontWeight: FontWeight.w600, 
+                       
                       fontSize: 18
                     ),),
                   )),
@@ -73,12 +74,7 @@ class HomePage extends StatelessWidget {
                     padding: EdgeInsets.only(top: 3, left: 3),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
-                      border: Border(
-                        bottom: BorderSide(color: Colors.black),
-                        top: BorderSide(color: Colors.black),
-                        left: BorderSide(color: Colors.black),
-                        right: BorderSide(color: Colors.black),
-                      )
+                   
                     ),
                     child: MaterialButton(
                       minWidth: double.infinity,
@@ -92,7 +88,7 @@ class HomePage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(50)
                       ),
                       child: Text("Sign up", style: TextStyle(
-                        fontWeight: FontWeight.w600, 
+                         
                         fontSize: 18
                       ),),
                     ),

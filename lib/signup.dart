@@ -33,9 +33,9 @@ class SignupPage extends StatelessWidget {
                     fontWeight: FontWeight.bold
                   ),)),
                   SizedBox(height: 20,),
-                  FadeAnimation(1.2, Text("Create an account, It's free", style: TextStyle(
+                  FadeAnimation(1.2, Text("Create A New  Account ,here", style: TextStyle(
                     fontSize: 15,
-                    color: Colors.grey[700]
+                    color: Colors.lime
                   ),)),
                 ],
               ),
@@ -44,6 +44,7 @@ class SignupPage extends StatelessWidget {
                   FadeAnimation(1.2, makeInput(label: "Email")),
                   FadeAnimation(1.3, makeInput(label: "Password", obscureText: true)),
                   FadeAnimation(1.4, makeInput(label: "Confirm Password", obscureText: true)),
+                  FadeAnimation(1.5, makeInput(label: "Phone Number")),
                 ],
               ),
               FadeAnimation(1.5, Container(
@@ -61,14 +62,13 @@ class SignupPage extends StatelessWidget {
                   minWidth: double.infinity,
                   height: 60,
                   onPressed: () {},
-                  color: Colors.blue,
+                 // color: Colors.blue,
                   elevation: 0,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50)
                   ),
                   child: Text("Sign up", style: TextStyle(
-                    fontWeight: FontWeight.w600, 
-                    fontSize: 18
+                    fontSize: 19
                   ),),
                 ),
               )),
@@ -77,7 +77,7 @@ class SignupPage extends StatelessWidget {
                 children: <Widget>[
                   Text("Already have an account?"),
                   Text(" Login", style: TextStyle(
-                    fontWeight: FontWeight.w600, fontSize: 18
+                   fontSize: 18
                   ),),
                 ],
               )),
@@ -94,7 +94,7 @@ class SignupPage extends StatelessWidget {
       children: <Widget>[
         Text(label, style: TextStyle(
           fontSize: 15,
-          fontWeight: FontWeight.w400,
+
           color: Colors.black87
         ),),
         SizedBox(height: 5,),
